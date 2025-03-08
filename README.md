@@ -149,10 +149,9 @@ ___
    - **Expected Result:** The `documentation-update` branch is available on GitHub.
 8. Create a pull request to the original repository.
    - **Expected Result:** A PR is opened for review.
-9. Document the process and any feedback received on the pull request.
-   - **Expected Result:** The PR process is documented, and feedback is noted.
+
 
 ---
 
-Happy Coding! 🚀
+
 
