@@ -36,7 +36,7 @@ cd Nexascale
 git checkout -b feature-update
 ```
 **Expected Result:** A new branch named `feature-update` is created and checked out.
-![GitHub Logo](https://files.fm/f/xqbhtzks37)
+![](https://files.fm/f/xqbhtzks37)
 
 
 #### Step 5: Add a new file and write an introduction
@@ -84,11 +84,9 @@ Collaborate with another student using GitHub’s collaboration features.
 8. The repository owner reviews, approves, and merges the PR.
 9. Both students pull the latest changes.
 
-### **Solution:**
-... *(Similar step-by-step breakdown with placeholders for images and expected outcomes)* ...
 
 ### **Expected Outcome:**
-![Collaboration Example](image_placeholder)
+![](https://files.fm/f/rzday6njme)
 
 ---
 
