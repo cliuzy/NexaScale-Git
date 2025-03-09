@@ -25,7 +25,7 @@ cd Nexascale
 git checkout -b feature-update
 ```
 **Expected Result:** A new branch named `feature-update` is created and checked out.
-![](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc2.png)
+![](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/Sc2.png)
 
 
 
@@ -56,7 +56,7 @@ git push origin feature-update
 - Review changes and merge the branch into `main`.
 
 ### **Expected Outcome:**
-![pull request](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc1.png)
+![](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc1.png)
 
 
 ---
@@ -117,7 +117,7 @@ git pull origin main
 ```
 **Expected Result:** Both contributors have the latest version locally.
 ### **Expected Outcome:**
-![pull request](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc5.png)
+![](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/Sc5.png)
 
 ---
 # Task 3 - resolving conflict
@@ -164,7 +164,7 @@ Git will detect conflicting changes and show a message like:
 Auto-merging conflict.txt
 CONFLICT (content): Merge conflict in conflict.txt
 ```
-![](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc2.png)
+![](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/Sc2.png)
 
 ---
 
@@ -191,7 +191,7 @@ git add conflict.txt
 git commit -m "Resolved merge conflict"
 git push origin main
 ```
-![](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc3.png)
+![](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/Sc3.png)
 
 
 
