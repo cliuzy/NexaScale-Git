@@ -27,6 +27,8 @@ git checkout -b feature-update
 **Expected Result:** A new branch named `feature-update` is created and checked out.
 ![]()
 <img src="https://files.fm/f/xqbhtzks37" alt="Git Merge Conflict Example" width="500">
+![image](https://github.com/cliuzy/NexaScale-Git/edit/main/images/sc1)
+
 
 
 
