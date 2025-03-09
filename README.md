@@ -25,7 +25,9 @@ cd Nexascale
 git checkout -b feature-update
 ```
 **Expected Result:** A new branch named `feature-update` is created and checked out.
-![](https://files.fm/f/xqbhtzks37)
+![]()
+<img src="https://files.fm/f/xqbhtzks37" alt="Git Merge Conflict Example" width="500">
+
 
 
 #### Step 5: Add a new file and write an introduction
