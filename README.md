@@ -25,7 +25,7 @@ cd Nexascale
 git checkout -b feature-update
 ```
 **Expected Result:** A new branch named `feature-update` is created and checked out.
-![Alt Text](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc1.png)
+![](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc2.png)
 
 
 
@@ -56,7 +56,8 @@ git push origin feature-update
 - Review changes and merge the branch into `main`.
 
 ### **Expected Outcome:**
-![pull request](https://files.fm/f/rb7pf6uhth)
+![pull request](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc1.png)
+
 
 ---
 
@@ -116,7 +117,7 @@ git pull origin main
 ```
 **Expected Result:** Both contributors have the latest version locally.
 ### **Expected Outcome:**
-![](https://files.fm/f/rzday6njme)
+![pull request](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc5.png)
 
 ---
 # Task 3 - resolving conflict
@@ -145,7 +146,7 @@ git commit -am "Updated conflict.txt in edit-text branch"
 
 ---
 
-## **Step 3: Modify `main` Branch in a Different Way**  
+## **Step 3: Modify `main` Branch **  
 ```bash
 git checkout main
 echo "This is the main branch modification." > conflict.txt
@@ -163,6 +164,7 @@ Git will detect conflicting changes and show a message like:
 Auto-merging conflict.txt
 CONFLICT (content): Merge conflict in conflict.txt
 ```
+![](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc2.png)
 
 ---
 
@@ -189,34 +191,14 @@ git add conflict.txt
 git commit -m "Resolved merge conflict"
 git push origin main
 ```
-
-```
-
-Would you like any additional formatting or explanations?
+![](https://raw.githubusercontent.com/cliuzy/NexaScale-Git/main/images/sc3.png)
 
 
 
----
 
-## **Task 4: Working with a Remote Repository**
-
-### **Objective:**
-Contribute to an open-source project by forking, making changes, and submitting a pull request.
-
-### **Steps:**
-1. Fork a repository from a popular open-source project on GitHub.
-2. Clone the forked repository.
-3. Navigate to the repository directory.
-4. Create a new branch called `documentation-update`.
-5. Make meaningful changes to the documentation files.
-6. Stage and commit the changes.
-7. Push the branch to your fork.
-8. Create a pull request to the original repository.
-9. Document the process and any feedback received.
-
-### **Expected Outcome:**
-![Open Source Contribution Example](image_placeholder)
 
 ---
+
+
 
 
