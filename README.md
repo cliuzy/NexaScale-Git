@@ -5,18 +5,7 @@
 ### **Objective:**
 Learn the basics of version control by creating a repository, working with branches, and making pull requests.
 
-### **Steps:**
-1. Create a new Git repository on GitHub (or any Git hosting service).
-2. Clone the repository locally.
-3. Navigate to the repository directory.
-4. Create a new branch called `feature-update`.
-5. Add a new file named `README.md` and write a short introduction about yourself.
-6. Stage and commit the changes.
-7. Push the `feature-update` branch to the remote repository.
-8. Open a pull request (PR) on GitHub to merge `feature-update` into `main`.
-9. Merge the PR after reviewing changes.
 
-### **Solution:**
 #### Step 1: Create a repository
 - Navigate to GitHub and create a new repository "NexaScale-Git"
 
@@ -73,40 +62,136 @@ git push origin feature-update
 ### **Objective:**
 Collaborate with another student using GitHub’s collaboration features.
 
-### **Steps:**
-1. One student creates a new repository and invites a team member as a collaborator.
-2. The repository owner creates an `index.html` file and pushes it to `main`.
-3. The collaborator clones the repository.
-4. The collaborator creates a new branch `update-styles`.
-5. Modify `index.html` by adding a `<style>` section.
-6. Commit and push the changes.
-7. Open a pull request.
-8. The repository owner reviews, approves, and merges the PR.
-9. Both students pull the latest changes.
+#### Step 1: Repository owner creates a new repository and invites a collaborator
+- Navigate to GitHub and create a new repository.
+- Go to **Settings > Collaborators** and invite the team member.
 
+#### Step 2: Repository owner creates and pushes `index.html`
+```sh
+echo "<html><body><h1>Welcome</h1></body></html>" > index.html
+git add index.html
+git commit -m "Initial commit with index.html"
+git push origin main
+```
+**Expected Result:** `index.html` is available in the remote repository.
 
+#### Step 3: Collaborator clones the repository
+```sh
+git clone <repository_url>
+```
+**Expected Result:** The repository is copied to the collaborator's local machine.
+
+#### Step 4: Collaborator creates a new branch `update-styles`
+```sh
+git checkout -b update-styles
+```
+**Expected Result:** A new branch `update-styles` is created.
+
+#### Step 5: Modify `index.html` by adding a `<style>` section
+```sh
+echo "<style> body { background-color: lightblue; } </style>" >> index.html
+```
+
+#### Step 6: Commit and push the changes
+```sh
+git add index.html
+git commit -m "Added styles to index.html"
+git push origin update-styles
+```
+**Expected Result:** Changes are uploaded to GitHub in `update-styles`.
+
+#### Step 7: Open a PR
+- Navigate to GitHub and create a pull request from `update-styles` to `main`.
+
+#### Step 8: Repository owner reviews, approves, and merges the PR
+- Review the changes and merge the PR.
+
+#### Step 9: Both students pull the latest changes
+```sh
+git checkout main
+git pull origin main
+```
+**Expected Result:** Both contributors have the latest version locally.
 ### **Expected Outcome:**
 ![](https://files.fm/f/rzday6njme)
 
 ---
+# Task 3 - resolving conflict
+## **Step 1: Create and Clone a Repository
 
-## **Task 3: Resolving Merge Conflicts**
+```markdown
+# **Resolving Merge Conflicts in Git**
 
-### **Objective:**
-Learn how to resolve merge conflicts when merging branches.
+## **Step 1: Create and Clone a Repository**  
+```bash
+git init merge-conflict-demo
+cd merge-conflict-demo
+echo "This is the original content." > conflict.txt
+git add conflict.txt
+git commit -m "Initial commit"
+```
 
-### **Steps:**
-1. Each student creates a repository and clones it.
-2. Create a new branch `edit-text`.
-3. Modify an existing file (or create one) and commit the changes.
-4. Switch back to `main`.
-5. Modify the same file in a different way and commit.
-6. Merge `edit-text` into `main`.
-7. Resolve any merge conflicts manually and commit the changes.
-8. Push the final changes to the repository.
+---
 
-### **Expected Outcome:**
-![Merge Conflict Resolution Example](image_placeholder)
+## **Step 2: Create and Modify a New Branch**  
+```bash
+git checkout -b edit-text
+echo "This is the edit-text branch modification." > conflict.txt
+git commit -am "Updated conflict.txt in edit-text branch"
+```
+
+---
+
+## **Step 3: Modify `main` Branch in a Different Way**  
+```bash
+git checkout main
+echo "This is the main branch modification." > conflict.txt
+git commit -am "Updated conflict.txt in main branch"
+```
+
+---
+
+## **Step 4: Merge and Create a Conflict**  
+```bash
+git merge edit-text
+```
+Git will detect conflicting changes and show a message like:  
+```plaintext
+Auto-merging conflict.txt
+CONFLICT (content): Merge conflict in conflict.txt
+```
+
+---
+
+## **Step 5: Resolve the Merge Conflict**  
+1. Open `conflict.txt`, and you'll see markers like:
+    ```plaintext
+    <<<<<<< HEAD
+    This is the main branch modification.
+    =======
+    This is the edit-text branch modification.
+    >>>>>>> edit-text
+    ```
+2. Choose the correct content or manually merge them:  
+    ```plaintext
+    This is the merged version, combining both changes.
+    ```
+3. Save the file.
+
+---
+
+## **Step 6: Commit and Push the Resolved Version**  
+```bash
+git add conflict.txt
+git commit -m "Resolved merge conflict"
+git push origin main
+```
+
+```
+
+Would you like any additional formatting or explanations?
+
+
 
 ---
 
